@@ -30,3 +30,6 @@ optimize(
   beta = c("beta1" = -0.2),
   X = c("x1" = 4)
 )
+
+# add function revenue_regret, that computes what proportion of revenue is lost
+# due to non-optimal price specification of a certain parametrization and price
