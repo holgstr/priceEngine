@@ -1,4 +1,17 @@
-linear_demand <- function(a, b, p) {
+#' Linear Demand
+#'
+#' @param a (positive `number`)\cr intercept of the demand function.
+#' @param b (negative `number`)\cr coefficient for price.
+#' @param p (non-negative `number`)\cr price.
+#' @param beta (named `numeric`)\cr named values of the covariate coefficients.
+#' @param X (named `numeric`)\cr named values of the ccovariates.
+#'
+#' @return This returns the (continuous) linear demand (i.e., a quantity).
+#' @export
+#'
+#' @examples
+#' linear_demand(100, -0.5, 30, c("beta1" = -2), c("x1" = 1))
+linear_demand <- function(a, b, p, beta = NULL, X = NULL) {
   a - b * p
 }
 
